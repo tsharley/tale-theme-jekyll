@@ -1,0 +1,34 @@
+# Site settings
+title:          TSMetallic
+description:    "tsmetallic.com is a blog about programming, technology, and other random things."
+baseurl:        "/tale"
+url:            "https://tsmetallic.com"
+theme:          tale
+
+# Author
+author:
+  name:         TJ Sharley
+  url:          https://tsmetallic.com
+  email:        admin@tsmetallic.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+permalink:      /:categories/:year/:month/:day/:title/
+paginate:       4
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
